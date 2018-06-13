@@ -22,10 +22,8 @@ h1 {
 div.picture  {
     background-image: url(assets/images/dawn.png);
     background-size: cover;
-    /* opacity: .5;*/
     content: "";
     height: 30em;
-    /* z-index: -1; */
     max-width: 1300px; 
 }
 
@@ -35,4 +33,56 @@ div.picture > span.kitten > img {
     /* z-index: 100; */
 }
 
+/* Esconder las img de los gatos */
+.mobile {
+    display: none;
+}
+
+.tablet {
+    display: none;
+}
+
+
 /* Medias Queries */ 
+
+/* Breakpoint - Tablet */
+@media (min-width:768px) and (max-width: 1140px) {
+    body {
+        color: #040B1B;
+    }
+    
+    div.picture  {
+        background: url("assets/images/night.jpg");
+        min-height: 90%;
+    }
+
+    img.mobile, img.desktop {
+        display: none;
+    }
+
+    img.tablet {
+        display: inline;
+    }
+
+}
+
+/* Breakpoint - Mobile */
+@media (min-width:320px) and (max-width: 768px) {
+    body {
+        color: #11C1F3;
+    }
+    
+    div.picture {
+        background: url("assets/images/sunny-day.jpg");
+        min-height: 90%;
+    }
+
+    img.desktop, img.tablet {
+        display: none;
+    }
+    
+    img.mobile {
+        display: inline;
+    }
+
+}
