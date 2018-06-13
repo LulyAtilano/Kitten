@@ -1,0 +1,38 @@
+body {
+    background-color: rosybrown;
+    box-sizing: border-box;
+    color: crimson;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Versión Desktop   */
+.container {
+    padding: 1.5em;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+div.picture  {
+    background-image: url(assets/images/dawn.png);
+    background-size: cover;
+    /* opacity: .5;*/
+    content: "";
+    height: 30em;
+    /* z-index: -1; */
+    max-width: 1300px; 
+}
+
+div.picture > span.kitten > img {
+    max-height: 197px;
+    padding-top: 18em;
+    /* z-index: 100; */
+}
+
+/* Medias Queries */ 
