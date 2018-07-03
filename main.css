@@ -13,30 +13,43 @@ body {
 .container {
     /*padding: 1.5em;*/
     width: 100%;
+    height: 100vh;
 }
 
-/*
+
 h1 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}*/
+position: relative;
+top: 0;
+margin: 0;
+}
 
 div.picture  {
-    background-image: url(assets/images/dawn.png);
+    background-image: url(assets/images/night.jpg);
     background-size: cover;
-    content: "";
+    background-repeat: no-repeat;
+    /*background-position: center;*/
+    /*width: 90%;*/
+    /*content: " ";*/
     height: 100vh;
-    max-width: 100%; 
 }
 
+/*div.picture > span.kitten {
+    border: 1px solid green;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}*/
+
 div.picture > span.kitten > img {
-    max-height: 197px;
-    padding-top: 70vh;
+    width: 150px;
+    position: relative;
+    padding-top: 68vh;
     /* z-index: 100; */
+    border: 1px solid red;
 }
 
 /* Esconder las img de los gatos */
-.mobile {
+.desktop {
     display: none;
 }
 
@@ -48,17 +61,22 @@ div.picture > span.kitten > img {
 /* Medias Queries */ 
 
 /* Breakpoint - Tablet */
-@media (min-width:768px) and (max-width: 1140px) {
+@media (min-width:457px) {
     body {
         color: #040B1B;
     }
 
     div.picture  {
-        background: url("assets/images/night.jpg");
+        background: url("assets/images/sunny-day.jpg");
+        background-position: center;
         background-size: cover;
-        /*height: auto;
-        width: 100%; */
+        background-repeat: no-repeat;
+        height: 100vh; 
     }
+
+    /*div.picture > span.kitten > img {
+        top: 75vh;
+    }*/
 
     img.mobile, img.desktop {
         display: none;
@@ -71,20 +89,28 @@ div.picture > span.kitten > img {
 }
 
 /* Breakpoint - Mobile */
-@media (min-width:320px) and (max-width: 768px) {
+@media (min-width:966px) {
     body {
         color: #11C1F3;
     }
     
     div.picture {
-        background: url("assets/images/sunny-day.jpg");
+        background: url("assets/images/dawn.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh; 
     }
 
-    img.desktop, img.tablet {
+    /*div.picture > span.kitten > img {
+        top: 70vh;
+    }*/
+
+    img.mobile, img.tablet {
         display: none;
     }
     
-    img.mobile {
+    img.desktop {
         display: inline;
     }
 
