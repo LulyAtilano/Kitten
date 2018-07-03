@@ -14,38 +14,36 @@ body {
     /*padding: 1.5em;*/
     width: 100%;
     height: 100vh;
+    /*border: 1px solid blue;*/
 }
 
 
 h1 {
-position: relative;
-top: 0;
-margin: 0;
+    position: relative;
+    top: 0;
+    margin: 0;
 }
 
 div.picture  {
     background-image: url(assets/images/night.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    /*background-position: center;*/
-    /*width: 90%;*/
-    /*content: " ";*/
     height: 100vh;
 }
 
-/*div.picture > span.kitten {
-    border: 1px solid green;
+div.picture > p.kitten {
+    /*border: 1px solid green;*/
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
-}*/
+    margin: 0;
+}
 
-div.picture > span.kitten > img {
+div.picture > p.kitten > img {
     width: 150px;
     position: relative;
-    padding-top: 68vh;
-    /* z-index: 100; */
-    /*border: 1px solid red;*/
+    padding-top: 48vh;
+    /* z-index: 100;
+    border: 1px solid purple;*/
 }
 
 /* Esconder las img de los gatos */
@@ -71,12 +69,11 @@ div.picture > span.kitten > img {
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh; 
     }
 
-    /*div.picture > span.kitten > img {
-        top: 75vh;
-    }*/
+    div.picture > p.kitten > img {
+        padding-top: 55vh;
+    }
 
     img.mobile, img.desktop {
         display: none;
@@ -88,7 +85,7 @@ div.picture > span.kitten > img {
 
 }
 
-/* Breakpoint - Mobile */
+/* Breakpoint - Desktop */
 @media (min-width:966px) {
     body {
         color: #11C1F3;
@@ -102,9 +99,9 @@ div.picture > span.kitten > img {
         height: 100vh; 
     }
 
-    /*div.picture > span.kitten > img {
-        top: 70vh;
-    }*/
+    div.picture > p.kitten > img {
+        padding-top:70vh;
+    }
 
     img.mobile, img.tablet {
         display: none;
