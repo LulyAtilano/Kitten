@@ -45,7 +45,7 @@ div.picture > span.kitten > img {
     position: relative;
     padding-top: 68vh;
     /* z-index: 100; */
-    border: 1px solid red;
+    /*border: 1px solid red;*/
 }
 
 /* Esconder las img de los gatos */
